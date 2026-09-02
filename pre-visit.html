@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolBoard PRE-VISIT Tour</title>
+    <link rel="preconnect" href="https://static.parastorage.com" crossorigin />
+    <link rel="stylesheet" href="https://static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="pre-visit">
+    <header class="chrome">
+      <div class="chrome-inner">
+        <h1>SolBoard Provider Scheduling — Click &amp; Callout Tour</h1>
+        <nav class="page-tabs" aria-label="Tour pages">
+          <a class="tab-link active" href="pre-visit.html" aria-current="page">PRE-VISIT</a>
+          <a class="tab-link" href="post-visit.html">POST-VISIT</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <section class="tour-panel" aria-label="PRE-VISIT screenshot with callout hotspots">
+        <div class="image-wrapper" id="imageWrapper">
+          <img src="images/pre-visit-final.png" alt="PRE-VISIT SolBoard dashboard screenshot" />
+          <div class="hotspot-layer" id="hotspotLayer"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="callout-backdrop hidden" id="calloutBackdrop" aria-hidden="true">
+      <svg class="connector-overlay" id="connectorSvg" aria-hidden="true">
+        <line id="connectorLine" x1="0" y1="0" x2="0" y2="0"></line>
+      </svg>
+      <article class="callout-card" id="calloutCard" role="dialog" aria-modal="true" aria-labelledby="calloutTitle">
+        <button class="callout-close" id="calloutClose" aria-label="Close callout">×</button>
+        <header class="callout-header">
+          <h2 id="calloutTitle"></h2>
+        </header>
+        <div class="callout-body">
+          <p id="calloutDescription"></p>
+        </div>
+      </article>
+    </div>
+
+    <script src="js/hotspots.js"></script>
+  </body>
+</html>
